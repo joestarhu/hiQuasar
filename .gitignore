@@ -32,3 +32,17 @@ yarn-error.log*
 
 # local .env files
 .env.local*
+
+
+# Quasar模版文件都不要,仅关注src中的文件
+.editorconfig
+.npmrc
+.prettierrc.json
+eslint.config.js
+index.html
+jsconfig.json
+package-lock.json
+package.json
+postcss.config.js
+public/
+quasar.config.js
