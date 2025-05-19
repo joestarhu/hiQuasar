@@ -1,7 +1,15 @@
-// This is just an example,
-// so you can safely delete all default props below
-
 export default {
-  failed: 'Action failed',
-  success: 'Action was successful'
+  // Appearance
+  msgModeAuto: "Auto",
+  msgModeLight: "Light",
+  msgModeDark: "Dark",
+
+  msgNoData: "No data",
+  msgRequired: "Required",
+
+
+  // Login
+  msgAccount: "Account",
+  msgPassword: "Password",
+  msgLogin: "Login",
 }

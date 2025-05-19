@@ -2,6 +2,13 @@
 ## 暗色模型的配置
 ```javascript
     ...
+    boot: [
+      'i18n',
+      'axios',
+      // 追加配置显示样式的boot文件
+      'appearance',
+    ],
+
 
     framework: {
         // 配置暗色模型的默认值为auto
@@ -24,3 +31,12 @@
 ```
 
 
+## Nofify插件配置
+```javascript
+    framework: {
+      ...
+
+      // 配置插件Notify
+      plugins: ["Notify"]
+    },
+```
