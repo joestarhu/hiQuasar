@@ -1,42 +1,25 @@
-# Quasar的Config文件配置
-## 暗色模型的配置
+# Quasar的Config文件配置(必须)
+> 配置文件仅显示需追加或更改内容,其他默认值均省略
 ```javascript
-    ...
-    boot: [
-      'i18n',
-      'axios',
-      // 追加配置显示样式的boot文件
+  boot:[
+      // 追加配置显示样式的boot文件(用于暗色模式)
       'appearance',
-    ],
+  ]
 
+  framework:{
+    // 配置暗色模型的默认值; 自动: "auto", 浅色: false, 深色:true; 
+    config: { dark: "auto" },
 
-    framework: {
-        // 配置暗色模型的默认值为auto
-        config: { dark: "auto" },
+    // 配置插件Notify
+    plugins: ["Notify"],
+  }
 
-      ...
-    }
 ```
 
-## i18n的配置
+# i18n的配置(可选)
 ```javascript
-    ...
-
     framework: {
         // 配置默认语言为中文简体
         lang: "zh-CN",
-
-      ...
     }
-```
-
-
-## Nofify插件配置
-```javascript
-    framework: {
-      ...
-
-      // 配置插件Notify
-      plugins: ["Notify"]
-    },
 ```
